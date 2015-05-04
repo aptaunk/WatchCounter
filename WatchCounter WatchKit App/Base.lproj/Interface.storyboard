@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchCounter_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="45" alignment="left" text="Label" textAlignment="center" id="jRb-vB-GZV">
+                        <label width="1" height="45" alignment="left" text="Label" textAlignment="center" id="jRb-vB-GZV">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
                         <button width="1" height="39" alignment="left" title="Increment" id="MhJ-bC-D5C">
