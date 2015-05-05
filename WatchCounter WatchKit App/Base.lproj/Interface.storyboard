@@ -11,7 +11,7 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchCounter_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="1" height="45" alignment="left" text="Label" textAlignment="center" id="jRb-vB-GZV">
-                            <color key="textColor" red="1" green="0.20395033230000001" blue="0.40720503810000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.22618534926202447" green="0.68436316287878785" blue="0.10334069135017268" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
                         <button width="1" height="39" alignment="left" title="Increment" id="MhJ-bC-D5C">
