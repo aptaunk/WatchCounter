@@ -5,34 +5,55 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--MainScreenCropped-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchCounter_WatchKit_App" customModuleProvider="target">
+                <controller backgroundImage="MainScreenCropped" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchCounter_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="45" alignment="left" text="Label" textAlignment="center" id="jRb-vB-GZV">
-                            <color key="textColor" red="1" green="0.23915989591252751" blue="0.19893379461954841" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        <label width="1" height="0.25" alignment="left" text="Label" textAlignment="center" id="jRb-vB-GZV">
+                            <color key="textColor" red="0.062745098039215685" green="0.54509803921568623" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="34"/>
                         </label>
-                        <button width="1" height="39" alignment="left" title="Increment" id="MhJ-bC-D5C">
-                            <connections>
-                                <action selector="increment" destination="AgC-eL-Hgc" id="aXY-fl-L6v"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Decrement" id="Pl7-i1-FqM">
-                            <connections>
-                                <action selector="decrement" destination="AgC-eL-Hgc" id="Zuh-dC-GEN"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Reset" id="x16-60-AJQ">
-                            <connections>
-                                <action selector="reset" destination="AgC-eL-Hgc" id="mbw-NN-NhS"/>
-                            </connections>
-                        </button>
+                        <group width="1" height="0.75" alignment="left" radius="0.0" spacing="0.0" id="8Az-XQ-gep">
+                            <items>
+                                <group width="0.59999999999999998" height="0.75" alignment="right" verticalAlignment="bottom" radius="0.0" spacing="0.0" id="TgW-gV-Eez">
+                                    <items>
+                                        <button alignment="left" id="aI4-VU-c7I">
+                                            <group key="contentGroup" width="1" height="1" alignment="left" id="LUc-10-HzS"/>
+                                            <connections>
+                                                <action selector="increment" destination="AgC-eL-Hgc" id="vyA-Vl-jN1"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="0.29999999999999999" height="0.65000000000000002" alignment="left" verticalAlignment="bottom" layout="vertical" radius="0.0" spacing="0.0" id="0ou-hI-GA0">
+                                    <items>
+                                        <group width="0.69999999999999996" height="0.45000000000000001" alignment="right" radius="0.0" spacing="0.0" id="8el-6s-rgC">
+                                            <items>
+                                                <button alignment="left" id="62W-YI-H2m">
+                                                    <group key="contentGroup" width="1" height="1" alignment="left" id="EBy-dV-LOv"/>
+                                                    <connections>
+                                                        <action selector="reset" destination="AgC-eL-Hgc" id="Ufs-8D-84S"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="0.90000000000000002" height="0.5" alignment="left" verticalAlignment="bottom" radius="0.0" spacing="0.0" id="d96-5v-m1r">
+                                            <items>
+                                                <button alignment="left" verticalAlignment="bottom" id="Wmk-l1-csK">
+                                                    <group key="contentGroup" width="1" height="1" alignment="left" id="buO-zw-UMY"/>
+                                                    <connections>
+                                                        <action selector="decrement" destination="AgC-eL-Hgc" id="TrW-Cg-yC7"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
                     <connections>
-                        <outlet property="Decrement" destination="Pl7-i1-FqM" id="5CI-ik-vEC"/>
-                        <outlet property="Increment" destination="MhJ-bC-D5C" id="WhM-ch-7NT"/>
                         <outlet property="watchCounterLabel" destination="jRb-vB-GZV" id="Zsc-tR-WEM"/>
                     </connections>
                 </controller>
