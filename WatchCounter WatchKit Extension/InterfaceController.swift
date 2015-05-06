@@ -15,19 +15,25 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var watchCounterLabel: WKInterfaceLabel!
     
     @IBAction func increment() {
-        self.watchCountValue += 1;
+        if watchCountValue < maxCountValue {
+            self.watchCountValue += 1
+        }
         setLabel()
     }
     @IBAction func decrement() {
-        self.watchCountValue -= 1;
+        if watchCountValue > minCountValue {
+            self.watchCountValue -= 1
+        }
         setLabel()
     }
     @IBAction func reset() {
-        self.watchCountValue = 0;
+        self.watchCountValue = 0
         setLabel()
     }
     
     var watchCountValue = 0
+    let maxCountValue = 9999999
+    let minCountValue = -999999
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
