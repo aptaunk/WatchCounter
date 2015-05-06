@@ -19,6 +19,8 @@
 		747D83EA1AF7EC59006C5AA1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747D83E81AF7EC59006C5AA1 /* Interface.storyboard */; };
 		747D83EC1AF7EC59006C5AA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747D83EB1AF7EC59006C5AA1 /* Images.xcassets */; };
 		747D83EF1AF7EC59006C5AA1 /* WatchCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 747D83D71AF7EC58006C5AA1 /* WatchCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		74D20EC11AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74D20EC01AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf */; };
+		74D20EC21AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74D20EC01AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,7 @@
 		747D83E71AF7EC59006C5AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		747D83E91AF7EC59006C5AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		747D83EB1AF7EC59006C5AA1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74D20EC01AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueHaasUnicaPro-Thin.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,7 @@
 		747D83E51AF7EC59006C5AA1 /* WatchCounter WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				74D20EC01AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf */,
 				747D83E81AF7EC59006C5AA1 /* Interface.storyboard */,
 				747D83EB1AF7EC59006C5AA1 /* Images.xcassets */,
 				747D83E61AF7EC59006C5AA1 /* Supporting Files */,
@@ -341,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D20EC11AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf in Resources */,
 				747D83DE1AF7EC58006C5AA1 /* Images.xcassets in Resources */,
 				747D83E21AF7EC59006C5AA1 /* WatchCounter WatchKit App.app in Resources */,
 			);
@@ -350,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D20EC21AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf in Resources */,
 				747D83EA1AF7EC59006C5AA1 /* Interface.storyboard in Resources */,
 				747D83EC1AF7EC59006C5AA1 /* Images.xcassets in Resources */,
 			);
@@ -641,6 +647,7 @@
 				747D83CF1AF7EC48006C5AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747D83D01AF7EC48006C5AA1 /* Build configuration list for PBXNativeTarget "WatchCounterTests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +656,7 @@
 				747D83D21AF7EC48006C5AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747D83F01AF7EC59006C5AA1 /* Build configuration list for PBXNativeTarget "WatchCounter WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +665,7 @@
 				747D83F21AF7EC59006C5AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747D83F31AF7EC59006C5AA1 /* Build configuration list for PBXNativeTarget "WatchCounter WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +674,7 @@
 				747D83F51AF7EC59006C5AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

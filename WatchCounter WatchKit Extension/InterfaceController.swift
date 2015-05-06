@@ -16,15 +16,15 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func increment() {
         self.watchCountValue += 1;
-        self.watchCounterLabel.setText(watchCountValue.description)
+        setLabel()
     }
     @IBAction func decrement() {
         self.watchCountValue -= 1;
-        self.watchCounterLabel.setText(watchCountValue.description)
+        setLabel()
     }
     @IBAction func reset() {
         self.watchCountValue = 0;
-        self.watchCounterLabel.setText(watchCountValue.description)
+        setLabel()
     }
     
     var watchCountValue = 0
@@ -33,8 +33,15 @@ class InterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-        self.watchCounterLabel.setText(watchCountValue.description)
+        setLabel()
         
+    }
+    
+    func setLabel() {
+        let helveticaFont = UIFont(name: "NeueHaasUnicaPro-Thin", size: 40)!
+        var fontAttrs = [NSFontAttributeName : helveticaFont]
+        var attrString = NSAttributedString(string: watchCountValue.description, attributes: fontAttrs)
+        self.watchCounterLabel.setAttributedText(attrString)
     }
 
 }
