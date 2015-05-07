@@ -58,7 +58,44 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="305" y="429"/>
+            <point key="canvasLocation" x="92" y="505"/>
+        </scene>
+        <!--<-->
+        <scene sceneID="7W6-1y-33y">
+            <objects>
+                <controller identifier="ResetScreen" title="&lt;" backgroundImage="ResetScreenCropped" id="APZ-Vj-bED" userLabel="&lt;" customClass="ResetController" customModule="WatchCounter_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="Aij-s2-Op2">
+                            <items>
+                                <group width="1" height="0.050000000000000003" alignment="left" id="PJq-P5-HBl"/>
+                                <label width="1" height="0.40000000000000002" alignment="left" text="Reset to 0?" textAlignment="center" id="13y-YN-UUO">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                </label>
+                                <group width="1" height="0.5" alignment="center" verticalAlignment="bottom" id="gKb-uS-MuM">
+                                    <items>
+                                        <button alignment="left" id="ywf-GV-5m3">
+                                            <group key="contentGroup" width="0.5" height="1" alignment="left" id="RBr-Qf-4mq"/>
+                                            <connections>
+                                                <action selector="negative" destination="APZ-Vj-bED" id="sB7-64-Qqt"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="right" id="ubv-b2-eqj">
+                                            <group key="contentGroup" width="0.5" height="1" alignment="left" id="0K9-g3-dQh"/>
+                                            <connections>
+                                                <action selector="positive" destination="APZ-Vj-bED" id="lY6-OB-3aj"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="resetToZeroLabel" destination="13y-YN-UUO" id="WYy-KN-EtT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="282" y="505"/>
         </scene>
     </scenes>
 </document>

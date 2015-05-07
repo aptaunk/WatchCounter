@@ -21,6 +21,7 @@
 		747D83EF1AF7EC59006C5AA1 /* WatchCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 747D83D71AF7EC58006C5AA1 /* WatchCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		74D20EC11AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74D20EC01AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf */; };
 		74D20EC21AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74D20EC01AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf */; };
+		74D20EC41AFBD4A800B90835 /* ResetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D20EC31AFBD4A800B90835 /* ResetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		747D83E91AF7EC59006C5AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		747D83EB1AF7EC59006C5AA1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74D20EC01AFABB4500B90835 /* NeueHaasUnicaPro-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueHaasUnicaPro-Thin.otf"; sourceTree = "<group>"; };
+		74D20EC31AFBD4A800B90835 /* ResetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				747D83DB1AF7EC58006C5AA1 /* InterfaceController.swift */,
+				74D20EC31AFBD4A800B90835 /* ResetController.swift */,
 				747D83DD1AF7EC58006C5AA1 /* Images.xcassets */,
 				747D83D91AF7EC58006C5AA1 /* Supporting Files */,
 			);
@@ -386,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				747D83DC1AF7EC58006C5AA1 /* InterfaceController.swift in Sources */,
+				74D20EC41AFBD4A800B90835 /* ResetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
