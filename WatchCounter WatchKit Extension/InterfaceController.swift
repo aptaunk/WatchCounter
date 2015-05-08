@@ -28,9 +28,8 @@ class InterfaceController: WKInterfaceController {
     }
     @IBAction func reset() {
         if watchCountValue != 0 {
-            self.presentControllerWithName("ResetScreen", context: nil)
+            self.presentControllerWithName("ResetScreen",context: self)
         }
-        
     }
     
     var watchCountValue = 0
@@ -43,6 +42,12 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
         setLabel()
         
+    }
+    
+    override func willActivate() {
+        super.willActivate()
+        
+        setLabel()
     }
     
     func setLabel() {

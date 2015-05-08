@@ -14,19 +14,22 @@ class ResetController: WKInterfaceController {
     
     @IBOutlet weak var resetToZeroLabel: WKInterfaceLabel!
     
+    var parentInterfaceController : InterfaceController!
+    
     @IBAction func positive() {
-        setLabel()
+        parentInterfaceController.watchCountValue = 0
+        self.dismissController()
     }
     @IBAction func negative() {
-        setLabel()
+        self.dismissController()
     }
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        parentInterfaceController = context as! InterfaceController
         setLabel()
-        
     }
     
     /*

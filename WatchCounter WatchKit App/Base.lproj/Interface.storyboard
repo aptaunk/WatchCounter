@@ -63,7 +63,7 @@
         <!--<-->
         <scene sceneID="7W6-1y-33y">
             <objects>
-                <controller identifier="ResetScreen" title="&lt;" backgroundImage="ResetScreenCropped" id="APZ-Vj-bED" userLabel="&lt;" customClass="ResetController" customModule="WatchCounter_WatchKit_Extension">
+                <controller identifier="ResetScreen" title="Cancel" backgroundImage="ResetScreenCropped" id="APZ-Vj-bED" userLabel="&lt;" customClass="ResetController" customModule="WatchCounter_WatchKit_Extension">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="Aij-s2-Op2">
                             <items>
